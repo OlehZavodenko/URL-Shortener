@@ -1,0 +1,8 @@
+<h1>Urlys</h1>
+<% @urls.each do |url| %>
+<p>
+<%= link_to url.random_id, url_path(url.random_id) %> => <%= url.original %>
+</p>
+<% end %>
+
+<%= link_to 'Shortern one more', new_url_path %>
